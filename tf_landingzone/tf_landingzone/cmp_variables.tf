@@ -43,26 +43,26 @@ variable "platform_fault_domain_count" {
 variable "vnet_address_range" {
     description =   "IP Range of the virtual network"
     type        =   string
-    default     =   "10.100.0.0/16"
+    default     =   "X"
 }
 
 
 #variable "subnet_address_range" {
 #    description =   "IP Range of the virtual network"
 #    type        =   string
-#    default     =   "10.100.1.0/24"
+#    default     =   "X4"
 #}
 
 variable "public_subnet_range" {
     description =   "IP Range of the virtual network"
     type        =   string
-    default     =   "10.101.1.0/24"
+    default     =   "x4"
 }
 
 variable "private_subnet_range" {
     description =   "IP Range of the virtual network"
     type        =   string
-    default     =   "10.101.2.0/24"
+    default     =   "x"
 }
 
 # Public IP and NIC Allocation Method
