@@ -84,7 +84,7 @@ variable "admin_username" {
 variable "admin_password" {
     description =   "Password to login to the VM"
     type        =   string
-    default     =   "Unisys*12345"
+    default     =   "XX*XX"
 }
 
 variable "os_disk_caching" {
