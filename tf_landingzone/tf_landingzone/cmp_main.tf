@@ -106,7 +106,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range           =       "*"
     destination_port_range      =       "22"
     source_address_prefix       =       "*" 
-    destination_address_prefix  =       "10.101.1.0/24"
+    destination_address_prefix  =       "x"
     
     }
     security_rule {
@@ -118,7 +118,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range           =       "*"
     destination_port_range      =       "80"
     source_address_prefix       =       "*" 
-    destination_address_prefix  =       "10.101.1.0/24"
+    destination_address_prefix  =       "x"
     
     }
     security_rule {
@@ -130,7 +130,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range           =       "*"
     destination_port_range      =       "443"
     source_address_prefix       =       "*" 
-    destination_address_prefix  =       "10.101.1.0/24"
+    destination_address_prefix  =       "x"
     
     }
     security_rule {
@@ -142,7 +142,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range           =       "*"
     destination_port_ranges     =       ["1433","53","67","68","445","902","903","8531","8400","8401","8403","161","3306","3389","135","5985","5986"]
     source_address_prefix       =       "*" 
-    destination_address_prefix  =       "10.101.1.0/24"
+    destination_address_prefix  =       "x"
     
     }
     security_rule {
@@ -177,7 +177,7 @@ resource "azurerm_network_security_group" "nsg" {
     protocol                    =       "TCP"
     source_port_range           =       "*"
     destination_port_range      =       "443"
-    source_address_prefix       =       "10.101.1.0/24" 
+    source_address_prefix       =       "x4" 
     destination_address_prefix  =       "*"
     
     }
@@ -189,7 +189,7 @@ resource "azurerm_network_security_group" "nsg" {
     protocol                    =       "TCP"
     source_port_range           =       "*"
     destination_port_range      =       "80"
-    source_address_prefix       =       "10.101.1.0/24" 
+    source_address_prefix       =       "x" 
     destination_address_prefix  =       "*"
     
     }
@@ -201,7 +201,7 @@ resource "azurerm_network_security_group" "nsg" {
     protocol                    =       "TCP"
     source_port_range           =       "*"
     destination_port_range      =       "1433"
-    source_address_prefix       =       "10.101.1.0/24" 
+    source_address_prefix       =       "x" 
     destination_address_prefix  =       "*"
     
     }
