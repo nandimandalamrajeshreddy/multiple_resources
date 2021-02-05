@@ -51,7 +51,7 @@ variable "platform_fault_domain_count" {
 variable "vnet_address_range" {
     description =   "IP Range of the virtual network"
     type        =   string
-    default     =   "10.100.0.0/16"
+    default     =   "X"
 }
 
 
@@ -59,7 +59,7 @@ variable "vnet_address_range" {
 variable "subnet_address_range" {
     description =   "IP Range of the virtual network"
     type        =   string
-    default     =   "10.100.1.0/24"
+    default     =   "X"
 }
 
 
